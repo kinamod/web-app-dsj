@@ -51,7 +51,7 @@ app.use(
      response_type: "code id_token",
      audience: "https://expenses-api",
    },
-   // 👆 add this 👆
+   // 👆 add this👆
  })
 );
 
