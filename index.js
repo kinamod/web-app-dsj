@@ -46,6 +46,12 @@ app.use(
    auth0Logout: true,
    baseURL: APP_URL,
    authRequired: false, //👈 - added this
+      // 👇 add this 👇
+   authorizationParams: {
+     response_type: "code id_token",
+     audience: "https://expenses-api",
+   },
+   // 👆 add this 👆
  })
 );
 
